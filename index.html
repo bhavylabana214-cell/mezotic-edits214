@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mezotic Edits - Online Card Maker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+</head>
+<body>
+
+<header>
+  <img src="logo.png">
+  <h1>Mezotic Edits</h1>
+  <p>Create Birthday & Greeting Cards Easily</p>
+</header>
+
+<div class="controls">
+  <input type="file" id="upload">
+  <input type="text" id="customText" placeholder="Enter your text">
+  <button onclick="addText()">Add Text</button>
+  <button onclick="clearCanvas()">Clear</button>
+  <button onclick="download()">Download</button>
+</div>
+
+<div class="templates">
+  <button onclick="setBg('template1.png')">Template 1</button>
+  <button onclick="setBg('template2.png')">Template 2</button>
+</div>
+
+<canvas id="canvas" width="500" height="500"></canvas>
+
+<footer>
+  <p>© 2025 Mezotic Edits</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
